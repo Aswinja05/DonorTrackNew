@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request Form</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="brandLogo"><img src="/public/imgs/3-removebg-preview.png" alt="" srcset=""></div>
+        <div class="brandName"><img src="/public/imgs/4-removebg-preview.png" alt="" srcset=""></div>
+
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Blood Request Form</h2>
+            <form>
+                <label for="patient-name">Patient Name</label>
+                <input type="text" id="patient-name" name="patient_name" placeholder="Enter patient's name" required>
+
+                <label for="emergency-contact">Emergency Contact Number</label>
+                <input type="tel" id="emergency-contact" name="emergency_contact" placeholder="Enter contact number" required>
+
+                <label for="blood-group">Blood Group Required</label>
+                <input type="text" id="blood-group" name="blood_group" placeholder="e.g., A+, B-" required>
+
+                <label for="units-needed">Units of Blood Needed</label>
+                <input type="number" id="units-needed" name="units_needed" placeholder="Enter number of units" required>
+
+                <label for="required-date">Required By Date</label>
+                <input type="date" id="required-date" name="required_date" required>
+
+                <label for="hospital-name">Hospital Name</label>
+                <input type="text" id="hospital-name" name="hospital_name" placeholder="Enter hospital name" required>
+
+                <label for="hospital-address">Hospital Address</label>
+                <textarea id="hospital-address" name="hospital_address" rows="3" placeholder="Enter hospital address" required></textarea>
+
+                <label for="doctor-note">Medical Prescription or Doctor's Note</label>
+                <input type="file" id="doctor-note" name="doctor_note" accept=".jpg,.png,.pdf" required>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+
+    
+</body>
+<script src="/requestBlood/script.js"></script>
+
+
+</html>

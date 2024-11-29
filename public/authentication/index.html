@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section class="authSection">
+    <div class="back_arrow" onclick="goBack()"><img src="../imgs/back-arrow-navigation-svgrepo-com.svg" alt="" srcset="" style="width: 10%;"></div>
+    <div class="brand_logo"> <img src="../imgs/2.png" alt="" srcset=""> </div>
+    <!-- <div class="brand_name">PaperDash</div> -->
+
+
+    <div class="login-form">
+        <form>
+            <input type="text" name="" class="form_ip" placeholder="Email Id" id="phoneNo">
+            <button class="requestOtp" onclick="event.preventDefault(); requestOTP()">Request OTP</button>
+            <input type="text" class="form_ip" placeholder="OTP" id="otp">
+
+
+
+            <!-- <input class="form_ip" name="cars" id="cars" form="carform" placeholder="Select your College">
+                <option value="volvo">CMRIT</option>
+            </input> -->
+
+            <button class="login" type="submit" onclick="event.preventDefault(); verifyOTP()">Login </button>
+            <!-- <span>First Time? <a href="">Register</a></span> -->
+            <div id="newUserFields" style="display: none;">
+                <input type="text" name="name" placeholder="Name" id="name"><br>
+                <input type="text" name="email" placeholder="EmailId" id="email"><br>
+                <input type="number" name="age" placeholder="Age" id="age"><br>
+                <input type="text" name="gender" placeholder="Gender" id="gender"><br>
+                <input type="text" name="phone" placeholder="Phone Number" id="phone"><br>
+                <input type="text" name="state" placeholder="State" id="state"><br>
+                <input type="text" name="city" placeholder="City" id="city"><br>
+                <input type="text" name="bloodType" placeholder="Blood Type" id="bloodType"><br>
+                <button type="button" onclick="event.preventDefault(); saveNewUser()">Save Details</button>
+            </div>
+            
+        </form>
+
+    </div>
+</section>
+</body>
+<script src="/authentication/script.js"></script>
+
+</html>

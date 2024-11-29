@@ -5,6 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Request Form</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        
+.container {
+    background-color: #424f55;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    /* background-color: #ffffff; */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 370px; /* Increased width by 20px (from 350px) */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color:  white;;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    
+    color: white;
+}
+
+
+
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #ff4f51;
+    outline: none;
+}
+
+.form-container button {
+    background-color: #ff4f51;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #e04344;
+}
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -46,7 +114,7 @@
 
     
 </body>
-<script src="/requestBlood/script.js"></script>
+<script src="../requestBlood/script.js"></script>
 
 
 </html>

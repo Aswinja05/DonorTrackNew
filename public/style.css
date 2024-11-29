@@ -1,0 +1,355 @@
+/* Color palette
+
+Green #424f55
+Red #ff4f51
+white #ffffff */
+
+
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+/* MAIN PAGE */
+
+/* General styles for the navigation bar */
+.navbar {
+    background-color: #424f55;
+    /* Dark background */
+    color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* Fixed navbar height */
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar left section */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navbar logo */
+.brandLogo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navbar company name */
+.ima img {
+    height: 43px;
+    width: auto;
+    margin-right: 40px;
+}
+
+/* Navbar right section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Login button */
+.login-btn {
+    background-color: #ff4f51 ;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.login-btn:hover {
+    background-color: #ff4f51;
+}
+
+.notification {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.notification:hover {
+    color: #f39c12;
+}
+
+/* Content container */
+.content-container {
+    background-color: #424f55;
+    /* Background color */
+    margin: 0;
+    margin-top: 60px;
+    /* Offset for fixed navbar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    /* Center text alignment */
+    height: calc(100vh - 60px);
+    /* Full height minus navbar */
+    padding: 20px;
+    /* Inner padding for container */
+    box-sizing: border-box;
+    font-weight: 900;
+}
+
+/* Headline styling */
+.content-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    /* Space below headline */
+}
+
+/* Paragraph styling */
+.content-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: left;
+   
+}
+
+
+.content-container .button-container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    
+    width: 100%;
+   
+    
+}
+
+/* Button styling */
+.content-container .button-container button {
+    background-color: #ff4f51;
+    /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /* Full width button */
+    text-transform: uppercase;
+}
+
+.content-container .button-container button:hover {
+    background-color: #27ae60;
+}
+
+/* Media query for iPhone 12 Pro */
+@media (max-width: 390px) {
+    .navbar {
+        flex-wrap: wrap;
+        /* Allow wrapping if needed */
+        height: auto;
+        padding: 8px 10px;
+    }
+
+    .brandLogo img {
+        height: 40px;
+        /* Adjust for smaller screen */
+    }
+
+    .ima img {
+        height: 44px;
+    }
+
+    .content-container h1 {
+        font-size: 22px;
+    }
+
+    .content-container p {
+        font-size: 32px;
+    }
+
+    .content-container .button-container button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+
+/* REQUEST BLOOD PAGE */
+.brandLogo img {
+    width: 50px;
+}
+
+.brandName img {
+    width: 50px;
+}
+
+.reqBloodMainSection {
+    background-color: #424f55;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Authentication */
+.authSection {
+    background-color: #424f55;
+    height: 100vh;
+}
+
+.back_arrow {
+    padding: 15px 15px;
+}
+
+.brand_logo {
+    padding: 20px 13px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand_logo img {
+    width: 65%;
+}
+
+.brand_name {
+    margin-top: 100px;
+    width: fit-content;
+    margin: 175px auto 0;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.login-form {
+    height: fit-content;
+    /* width: 100vw; */
+    padding: 40px 60px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
+
+.form_ip {
+    height: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    margin: 15px 0;
+    padding: 7px 0;
+    outline: none;
+    background-color: transparent;
+    /* border: none; */
+    color: white;
+}
+
+.requestOtp {
+    height: fit-content;
+    /* width: 100%; */
+    border: 1px solid #747474;
+    padding: 3px 25px;
+    border-radius: 25px;
+    margin: 2px 0px 10px;
+    background-color: #ff4f51;
+    display: flex;
+    color: white;
+    font-weight: bolder;
+    /* align-items: end; */
+    position: absolute;
+    left: 45%;
+    /* top: 51%; */
+    font-size: 17px;
+}
+
+#newUserFields {
+    display: flex;
+    position: absolute;
+    /* bottom: 73%; */
+    align-items: center;
+    padding: 30px 0px;
+    bottom: 53%;
+    width: 70%;
+    border-radius: 14px;
+    flex-direction: column;
+    background-color: #cbcdd1;
+}
+
+#newUserFields input {
+    height: 10px;
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    /* margin: 15px 0; */
+    padding: 7px 0;
+    outline: none;
+    background-color: transparent;
+}
+
+#newUserFields button {
+    border-radius: 10px;
+    background-color: #173054;
+    color: white;
+}
+
+.login {
+    height: fit-content;
+    width: 100%;
+    border: 1px solid #747474;
+    padding: 7px 25px;
+    border-radius: 25px;
+    margin: 12px 0px 10px;
+    background-color: #ff4f51;
+    color: white;
+    font-weight: bolder;
+}
+
+.login-form span {
+    color: #ff4f51;
+    font-family: sans-serif;
+    width: fit-content;
+    /* margin: auto; */
+    display: block;
+}
+
+.login-form span a {
+    color: cadetblue;
+}
